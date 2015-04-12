@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src = "resources/scr.js"></script>
+<link rel = "stylsheet" href = "style.css">
+</head>
+
+<body>
+	<nav>
+		<a id="getAllTracks" href="#" onclick="getAllTracks();return false;">Tracks</a>
+		<a id="getAllArtists" href="#" onclick="getAllArtists();return false;">Artists</a>
+		<a id="getAllPlaylists" href="#" onclick="getAllPlaylists();return false;">Playlists</a>
+		<a id="getAllAlbums" href="#" onclick="getAllAlbums()');return false;">Albums</a>
+		<br>
+		<form id = "myform" action = "rest/xml/init" method = "POST" enctype="multipart/form-data">
+			<input id = fileName name = "fileName" type= "file">
+			<input type = "submit" name = "Parse XML">
+		</form>
+	</nav>
+	<section id = "results">
+	</section>
+</body>
+
+</html>
